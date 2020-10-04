@@ -1,7 +1,7 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import styled from 'styled-components/macro';
 import { P } from './P';
-import { Helmet } from 'react-helmet-async';
 
 export function NotFoundPage() {
   return (
@@ -25,19 +25,19 @@ export function NotFoundPage() {
 }
 
 const Wrapper = styled.div`
-  height: 100vh;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  height: 100vh;
+  justify-content: center;
   min-height: 320px;
 `;
 
 const Title = styled.div`
-  margin-top: -8vh;
-  font-weight: bold;
-  color: black;
+  color: #000;
   font-size: 3.375rem;
+  font-weight: bold;
+  margin-top: -8vh;
 
   span {
     font-size: 3.125rem;

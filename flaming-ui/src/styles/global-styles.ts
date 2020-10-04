@@ -9,6 +9,12 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: ${p => p.theme.background};
+    color: ${p => p.theme.text};
+  }
+
+  body.fontLoaded {
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   #root {
@@ -18,11 +24,10 @@ export const GlobalStyle = createGlobalStyle`
 
   p,
   label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
   }
 
-  input, select {
+  input, select, button {
     font-family: inherit;
     font-size: inherit;
   }
