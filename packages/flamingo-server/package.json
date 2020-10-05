@@ -1,5 +1,5 @@
 {
-  "name": "express-typescript-starter",
+  "name": "flamingo-server",
   "version": "0.1.0",
   "description": "A starting point for Node.js express apps with TypeScript",
   "repository": {
