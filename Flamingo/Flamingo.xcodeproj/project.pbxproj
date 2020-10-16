@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		365F86D2253A3D6D00572E11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F86D1253A3D6D00572E11 /* AppDelegate.swift */; };
+		365F86D4253A3D6D00572E11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F86D3253A3D6D00572E11 /* ContentView.swift */; };
+		365F86D6253A3D6D00572E11 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 365F86D5253A3D6D00572E11 /* Experience.rcproject */; };
+		365F86D8253A3D7000572E11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365F86D7253A3D7000572E11 /* Assets.xcassets */; };
+		365F86DB253A3D7000572E11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365F86DA253A3D7000572E11 /* Preview Assets.xcassets */; };
+		365F86E6253A3D7000572E11 /* FlamingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F86E5253A3D7000572E11 /* FlamingoTests.swift */; };
+		365F86F1253A3D7000572E11 /* FlamingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F86F0253A3D7000572E11 /* FlamingoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		365F86E2253A3D7000572E11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 365F86C6253A3D6D00572E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 365F86CD253A3D6D00572E11;
+			remoteInfo = Flamingo;
+		};
+		365F86ED253A3D7000572E11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 365F86C6253A3D6D00572E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 365F86CD253A3D6D00572E11;
+			remoteInfo = Flamingo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		365F86CE253A3D6D00572E11 /* Flamingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flamingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		365F86D1253A3D6D00572E11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		365F86D3253A3D6D00572E11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		365F86D5253A3D6D00572E11 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		365F86D7253A3D7000572E11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		365F86DA253A3D7000572E11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		365F86DC253A3D7000572E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365F86E1253A3D7000572E11 /* FlamingoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlamingoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		365F86E5253A3D7000572E11 /* FlamingoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamingoTests.swift; sourceTree = "<group>"; };
+		365F86E7253A3D7000572E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365F86EC253A3D7000572E11 /* FlamingoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlamingoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		365F86F0253A3D7000572E11 /* FlamingoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamingoUITests.swift; sourceTree = "<group>"; };
+		365F86F2253A3D7000572E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		365F86CB253A3D6D00572E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365F86DE253A3D7000572E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365F86E9253A3D7000572E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		365F86C5253A3D6D00572E11 = {
+			isa = PBXGroup;
+			children = (
+				365F86D0253A3D6D00572E11 /* Flamingo */,
+				365F86E4253A3D7000572E11 /* FlamingoTests */,
+				365F86EF253A3D7000572E11 /* FlamingoUITests */,
+				365F86CF253A3D6D00572E11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		365F86CF253A3D6D00572E11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				365F86CE253A3D6D00572E11 /* Flamingo.app */,
+				365F86E1253A3D7000572E11 /* FlamingoTests.xctest */,
+				365F86EC253A3D7000572E11 /* FlamingoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		365F86D0253A3D6D00572E11 /* Flamingo */ = {
+			isa = PBXGroup;
+			children = (
+				365F86D1253A3D6D00572E11 /* AppDelegate.swift */,
+				365F86D3253A3D6D00572E11 /* ContentView.swift */,
+				365F86D5253A3D6D00572E11 /* Experience.rcproject */,
+				365F86D7253A3D7000572E11 /* Assets.xcassets */,
+				365F86DC253A3D7000572E11 /* Info.plist */,
+				365F86D9253A3D7000572E11 /* Preview Content */,
+			);
+			path = Flamingo;
+			sourceTree = "<group>";
+		};
+		365F86D9253A3D7000572E11 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				365F86DA253A3D7000572E11 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		365F86E4253A3D7000572E11 /* FlamingoTests */ = {
+			isa = PBXGroup;
+			children = (
+				365F86E5253A3D7000572E11 /* FlamingoTests.swift */,
+				365F86E7253A3D7000572E11 /* Info.plist */,
+			);
+			path = FlamingoTests;
+			sourceTree = "<group>";
+		};
+		365F86EF253A3D7000572E11 /* FlamingoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				365F86F0253A3D7000572E11 /* FlamingoUITests.swift */,
+				365F86F2253A3D7000572E11 /* Info.plist */,
+			);
+			path = FlamingoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		365F86CD253A3D6D00572E11 /* Flamingo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365F86F5253A3D7000572E11 /* Build configuration list for PBXNativeTarget "Flamingo" */;
+			buildPhases = (
+				365F86CA253A3D6D00572E11 /* Sources */,
+				365F86CB253A3D6D00572E11 /* Frameworks */,
+				365F86CC253A3D6D00572E11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flamingo;
+			productName = Flamingo;
+			productReference = 365F86CE253A3D6D00572E11 /* Flamingo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		365F86E0253A3D7000572E11 /* FlamingoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365F86F8253A3D7000572E11 /* Build configuration list for PBXNativeTarget "FlamingoTests" */;
+			buildPhases = (
+				365F86DD253A3D7000572E11 /* Sources */,
+				365F86DE253A3D7000572E11 /* Frameworks */,
+				365F86DF253A3D7000572E11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				365F86E3253A3D7000572E11 /* PBXTargetDependency */,
+			);
+			name = FlamingoTests;
+			productName = FlamingoTests;
+			productReference = 365F86E1253A3D7000572E11 /* FlamingoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		365F86EB253A3D7000572E11 /* FlamingoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365F86FB253A3D7000572E11 /* Build configuration list for PBXNativeTarget "FlamingoUITests" */;
+			buildPhases = (
+				365F86E8253A3D7000572E11 /* Sources */,
+				365F86E9253A3D7000572E11 /* Frameworks */,
+				365F86EA253A3D7000572E11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				365F86EE253A3D7000572E11 /* PBXTargetDependency */,
+			);
+			name = FlamingoUITests;
+			productName = FlamingoUITests;
+			productReference = 365F86EC253A3D7000572E11 /* FlamingoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		365F86C6253A3D6D00572E11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					365F86CD253A3D6D00572E11 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					365F86E0253A3D7000572E11 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 365F86CD253A3D6D00572E11;
+					};
+					365F86EB253A3D7000572E11 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 365F86CD253A3D6D00572E11;
+					};
+				};
+			};
+			buildConfigurationList = 365F86C9253A3D6D00572E11 /* Build configuration list for PBXProject "Flamingo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 365F86C5253A3D6D00572E11;
+			productRefGroup = 365F86CF253A3D6D00572E11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				365F86CD253A3D6D00572E11 /* Flamingo */,
+				365F86E0253A3D7000572E11 /* FlamingoTests */,
+				365F86EB253A3D7000572E11 /* FlamingoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		365F86CC253A3D6D00572E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365F86DB253A3D7000572E11 /* Preview Assets.xcassets in Resources */,
+				365F86D8253A3D7000572E11 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365F86DF253A3D7000572E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365F86EA253A3D7000572E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		365F86CA253A3D6D00572E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365F86D4253A3D6D00572E11 /* ContentView.swift in Sources */,
+				365F86D2253A3D6D00572E11 /* AppDelegate.swift in Sources */,
+				365F86D6253A3D6D00572E11 /* Experience.rcproject in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365F86DD253A3D7000572E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365F86E6253A3D7000572E11 /* FlamingoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365F86E8253A3D7000572E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365F86F1253A3D7000572E11 /* FlamingoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		365F86E3253A3D7000572E11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 365F86CD253A3D6D00572E11 /* Flamingo */;
+			targetProxy = 365F86E2253A3D7000572E11 /* PBXContainerItemProxy */;
+		};
+		365F86EE253A3D7000572E11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 365F86CD253A3D6D00572E11 /* Flamingo */;
+			targetProxy = 365F86ED253A3D7000572E11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		365F86F3253A3D7000572E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		365F86F4253A3D7000572E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		365F86F6253A3D7000572E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Flamingo/Preview Content\"";
+				DEVELOPMENT_TEAM = 9Y67R9P3DN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Flamingo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.Flamingo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		365F86F7253A3D7000572E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Flamingo/Preview Content\"";
+				DEVELOPMENT_TEAM = 9Y67R9P3DN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Flamingo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.Flamingo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		365F86F9253A3D7000572E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlamingoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.FlamingoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flamingo.app/Flamingo";
+			};
+			name = Debug;
+		};
+		365F86FA253A3D7000572E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlamingoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.FlamingoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flamingo.app/Flamingo";
+			};
+			name = Release;
+		};
+		365F86FC253A3D7000572E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlamingoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.FlamingoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flamingo;
+			};
+			name = Debug;
+		};
+		365F86FD253A3D7000572E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlamingoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.FlamingoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flamingo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		365F86C9253A3D6D00572E11 /* Build configuration list for PBXProject "Flamingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365F86F3253A3D7000572E11 /* Debug */,
+				365F86F4253A3D7000572E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		365F86F5253A3D7000572E11 /* Build configuration list for PBXNativeTarget "Flamingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365F86F6253A3D7000572E11 /* Debug */,
+				365F86F7253A3D7000572E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		365F86F8253A3D7000572E11 /* Build configuration list for PBXNativeTarget "FlamingoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365F86F9253A3D7000572E11 /* Debug */,
+				365F86FA253A3D7000572E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		365F86FB253A3D7000572E11 /* Build configuration list for PBXNativeTarget "FlamingoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365F86FC253A3D7000572E11 /* Debug */,
+				365F86FD253A3D7000572E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 365F86C6253A3D6D00572E11 /* Project object */;
+}
