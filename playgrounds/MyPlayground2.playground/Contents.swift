@@ -7,21 +7,21 @@ class TextFieldViewController : UIViewController, UITextFieldDelegate {
     var textField: UITextField!
     var button: UIButton!
 
-    override func loadView() {
-
+    override func viewDidLoad() {
         // UI
 
         let view = UIView()
         view.backgroundColor = .white
         
         button = UIButton(type: .system)
-        button.setTitle("Press", for: .normal)
+        button.setTitle("Run", for: .normal)
         button.tintColor = .blue
         button.addTarget(self,action: #selector(updateView), for: .touchUpInside)
 
         textField = UITextField()
+        TypingDNARecorderMobile.addTarget(textField);
+        
         textField.borderStyle = .roundedRect
-        textField.text = "Hello world!"
         view.addSubview(textField)
 
         label = UILabel()
@@ -63,7 +63,8 @@ class TextFieldViewController : UIViewController, UITextFieldDelegate {
     }
     
     @objc func updateView() {
-        // Add function here!
+        let typingPattern = TypingDNARecorderMobile.getTypingPattern(1, 0, "Please", 0, textField);
+        print("Type 1: ", typingPattern);
     }
 
 }
