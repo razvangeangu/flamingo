@@ -1,13 +1,13 @@
 //
-//  FlamingoUITests.swift
-//  FlamingoUITests
+//  AmazingUITests.swift
+//  AmazingUITests
 //
-//  Created by Răzvan-Gabriel Geangu on 16/10/2020.
+//  Created by Răzvan-Gabriel Geangu on 19/10/2020.
 //
 
 import XCTest
 
-class FlamingoUITests: XCTestCase {
+class AmazingUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

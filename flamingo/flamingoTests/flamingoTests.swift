@@ -1,14 +1,14 @@
 //
-//  FlamingoTests.swift
-//  FlamingoTests
+//  flamingoTests.swift
+//  flamingoTests
 //
-//  Created by Răzvan-Gabriel Geangu on 16/10/2020.
+//  Created by Răzvan-Gabriel Geangu on 20/10/2020.
 //
 
 import XCTest
-@testable import Flamingo
+@testable import flamingo
 
-class FlamingoTests: XCTestCase {
+class flamingoTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

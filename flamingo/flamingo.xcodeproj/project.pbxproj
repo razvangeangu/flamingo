@@ -7,64 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		365F86D2253A3D6D00572E11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F86D1253A3D6D00572E11 /* AppDelegate.swift */; };
-		365F86D4253A3D6D00572E11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F86D3253A3D6D00572E11 /* ContentView.swift */; };
-		365F86D6253A3D6D00572E11 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 365F86D5253A3D6D00572E11 /* Experience.rcproject */; };
-		365F86D8253A3D7000572E11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365F86D7253A3D7000572E11 /* Assets.xcassets */; };
-		365F86DB253A3D7000572E11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365F86DA253A3D7000572E11 /* Preview Assets.xcassets */; };
-		365F86E6253A3D7000572E11 /* FlamingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F86E5253A3D7000572E11 /* FlamingoTests.swift */; };
-		365F86F1253A3D7000572E11 /* FlamingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F86F0253A3D7000572E11 /* FlamingoUITests.swift */; };
+		366C9687253F53F000D5A9EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C9686253F53F000D5A9EE /* AppDelegate.swift */; };
+		366C9689253F53F000D5A9EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C9688253F53F000D5A9EE /* ContentView.swift */; };
+		366C968B253F53F000D5A9EE /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 366C968A253F53F000D5A9EE /* Experience.rcproject */; };
+		366C968D253F53F100D5A9EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366C968C253F53F100D5A9EE /* Assets.xcassets */; };
+		366C9690253F53F100D5A9EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366C968F253F53F100D5A9EE /* Preview Assets.xcassets */; };
+		366C9693253F53F100D5A9EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366C9691253F53F100D5A9EE /* LaunchScreen.storyboard */; };
+		366C969E253F53F100D5A9EE /* flamingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C969D253F53F100D5A9EE /* flamingoTests.swift */; };
+		366C96A9253F53F100D5A9EE /* flamingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C96A8253F53F100D5A9EE /* flamingoUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		365F86E2253A3D7000572E11 /* PBXContainerItemProxy */ = {
+		366C969A253F53F100D5A9EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 365F86C6253A3D6D00572E11 /* Project object */;
+			containerPortal = 366C967B253F53F000D5A9EE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 365F86CD253A3D6D00572E11;
-			remoteInfo = Flamingo;
+			remoteGlobalIDString = 366C9682253F53F000D5A9EE;
+			remoteInfo = flamingo;
 		};
-		365F86ED253A3D7000572E11 /* PBXContainerItemProxy */ = {
+		366C96A5253F53F100D5A9EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 365F86C6253A3D6D00572E11 /* Project object */;
+			containerPortal = 366C967B253F53F000D5A9EE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 365F86CD253A3D6D00572E11;
-			remoteInfo = Flamingo;
+			remoteGlobalIDString = 366C9682253F53F000D5A9EE;
+			remoteInfo = flamingo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		365F86CE253A3D6D00572E11 /* Flamingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flamingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		365F86D1253A3D6D00572E11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		365F86D3253A3D6D00572E11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		365F86D5253A3D6D00572E11 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
-		365F86D7253A3D7000572E11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		365F86DA253A3D7000572E11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		365F86DC253A3D7000572E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		365F86E1253A3D7000572E11 /* FlamingoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlamingoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		365F86E5253A3D7000572E11 /* FlamingoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamingoTests.swift; sourceTree = "<group>"; };
-		365F86E7253A3D7000572E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		365F86EC253A3D7000572E11 /* FlamingoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlamingoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		365F86F0253A3D7000572E11 /* FlamingoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamingoUITests.swift; sourceTree = "<group>"; };
-		365F86F2253A3D7000572E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366C9683253F53F000D5A9EE /* flamingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flamingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		366C9686253F53F000D5A9EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		366C9688253F53F000D5A9EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		366C968A253F53F000D5A9EE /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		366C968C253F53F100D5A9EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		366C968F253F53F100D5A9EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		366C9692253F53F100D5A9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		366C9694253F53F100D5A9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366C9699253F53F100D5A9EE /* flamingoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flamingoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		366C969D253F53F100D5A9EE /* flamingoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flamingoTests.swift; sourceTree = "<group>"; };
+		366C969F253F53F100D5A9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366C96A4253F53F100D5A9EE /* flamingoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flamingoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		366C96A8253F53F100D5A9EE /* flamingoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flamingoUITests.swift; sourceTree = "<group>"; };
+		366C96AA253F53F100D5A9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		365F86CB253A3D6D00572E11 /* Frameworks */ = {
+		366C9680253F53F000D5A9EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		365F86DE253A3D7000572E11 /* Frameworks */ = {
+		366C9696253F53F100D5A9EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		365F86E9253A3D7000572E11 /* Frameworks */ = {
+		366C96A1253F53F100D5A9EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,144 +76,145 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		365F86C5253A3D6D00572E11 = {
+		366C967A253F53F000D5A9EE = {
 			isa = PBXGroup;
 			children = (
-				365F86D0253A3D6D00572E11 /* Flamingo */,
-				365F86E4253A3D7000572E11 /* FlamingoTests */,
-				365F86EF253A3D7000572E11 /* FlamingoUITests */,
-				365F86CF253A3D6D00572E11 /* Products */,
+				366C9685253F53F000D5A9EE /* flamingo */,
+				366C969C253F53F100D5A9EE /* flamingoTests */,
+				366C96A7253F53F100D5A9EE /* flamingoUITests */,
+				366C9684253F53F000D5A9EE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		365F86CF253A3D6D00572E11 /* Products */ = {
+		366C9684253F53F000D5A9EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				365F86CE253A3D6D00572E11 /* Flamingo.app */,
-				365F86E1253A3D7000572E11 /* FlamingoTests.xctest */,
-				365F86EC253A3D7000572E11 /* FlamingoUITests.xctest */,
+				366C9683253F53F000D5A9EE /* flamingo.app */,
+				366C9699253F53F100D5A9EE /* flamingoTests.xctest */,
+				366C96A4253F53F100D5A9EE /* flamingoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		365F86D0253A3D6D00572E11 /* Flamingo */ = {
+		366C9685253F53F000D5A9EE /* flamingo */ = {
 			isa = PBXGroup;
 			children = (
-				365F86D1253A3D6D00572E11 /* AppDelegate.swift */,
-				365F86D3253A3D6D00572E11 /* ContentView.swift */,
-				365F86D5253A3D6D00572E11 /* Experience.rcproject */,
-				365F86D7253A3D7000572E11 /* Assets.xcassets */,
-				365F86DC253A3D7000572E11 /* Info.plist */,
-				365F86D9253A3D7000572E11 /* Preview Content */,
+				366C9686253F53F000D5A9EE /* AppDelegate.swift */,
+				366C9688253F53F000D5A9EE /* ContentView.swift */,
+				366C968A253F53F000D5A9EE /* Experience.rcproject */,
+				366C968C253F53F100D5A9EE /* Assets.xcassets */,
+				366C9691253F53F100D5A9EE /* LaunchScreen.storyboard */,
+				366C9694253F53F100D5A9EE /* Info.plist */,
+				366C968E253F53F100D5A9EE /* Preview Content */,
 			);
-			path = Flamingo;
+			path = flamingo;
 			sourceTree = "<group>";
 		};
-		365F86D9253A3D7000572E11 /* Preview Content */ = {
+		366C968E253F53F100D5A9EE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				365F86DA253A3D7000572E11 /* Preview Assets.xcassets */,
+				366C968F253F53F100D5A9EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		365F86E4253A3D7000572E11 /* FlamingoTests */ = {
+		366C969C253F53F100D5A9EE /* flamingoTests */ = {
 			isa = PBXGroup;
 			children = (
-				365F86E5253A3D7000572E11 /* FlamingoTests.swift */,
-				365F86E7253A3D7000572E11 /* Info.plist */,
+				366C969D253F53F100D5A9EE /* flamingoTests.swift */,
+				366C969F253F53F100D5A9EE /* Info.plist */,
 			);
-			path = FlamingoTests;
+			path = flamingoTests;
 			sourceTree = "<group>";
 		};
-		365F86EF253A3D7000572E11 /* FlamingoUITests */ = {
+		366C96A7253F53F100D5A9EE /* flamingoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				365F86F0253A3D7000572E11 /* FlamingoUITests.swift */,
-				365F86F2253A3D7000572E11 /* Info.plist */,
+				366C96A8253F53F100D5A9EE /* flamingoUITests.swift */,
+				366C96AA253F53F100D5A9EE /* Info.plist */,
 			);
-			path = FlamingoUITests;
+			path = flamingoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		365F86CD253A3D6D00572E11 /* Flamingo */ = {
+		366C9682253F53F000D5A9EE /* flamingo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 365F86F5253A3D7000572E11 /* Build configuration list for PBXNativeTarget "Flamingo" */;
+			buildConfigurationList = 366C96AD253F53F100D5A9EE /* Build configuration list for PBXNativeTarget "flamingo" */;
 			buildPhases = (
-				365F86CA253A3D6D00572E11 /* Sources */,
-				365F86CB253A3D6D00572E11 /* Frameworks */,
-				365F86CC253A3D6D00572E11 /* Resources */,
+				366C967F253F53F000D5A9EE /* Sources */,
+				366C9680253F53F000D5A9EE /* Frameworks */,
+				366C9681253F53F000D5A9EE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Flamingo;
-			productName = Flamingo;
-			productReference = 365F86CE253A3D6D00572E11 /* Flamingo.app */;
+			name = flamingo;
+			productName = flamingo;
+			productReference = 366C9683253F53F000D5A9EE /* flamingo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		365F86E0253A3D7000572E11 /* FlamingoTests */ = {
+		366C9698253F53F100D5A9EE /* flamingoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 365F86F8253A3D7000572E11 /* Build configuration list for PBXNativeTarget "FlamingoTests" */;
+			buildConfigurationList = 366C96B0253F53F100D5A9EE /* Build configuration list for PBXNativeTarget "flamingoTests" */;
 			buildPhases = (
-				365F86DD253A3D7000572E11 /* Sources */,
-				365F86DE253A3D7000572E11 /* Frameworks */,
-				365F86DF253A3D7000572E11 /* Resources */,
+				366C9695253F53F100D5A9EE /* Sources */,
+				366C9696253F53F100D5A9EE /* Frameworks */,
+				366C9697253F53F100D5A9EE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				365F86E3253A3D7000572E11 /* PBXTargetDependency */,
+				366C969B253F53F100D5A9EE /* PBXTargetDependency */,
 			);
-			name = FlamingoTests;
-			productName = FlamingoTests;
-			productReference = 365F86E1253A3D7000572E11 /* FlamingoTests.xctest */;
+			name = flamingoTests;
+			productName = flamingoTests;
+			productReference = 366C9699253F53F100D5A9EE /* flamingoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		365F86EB253A3D7000572E11 /* FlamingoUITests */ = {
+		366C96A3253F53F100D5A9EE /* flamingoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 365F86FB253A3D7000572E11 /* Build configuration list for PBXNativeTarget "FlamingoUITests" */;
+			buildConfigurationList = 366C96B3253F53F100D5A9EE /* Build configuration list for PBXNativeTarget "flamingoUITests" */;
 			buildPhases = (
-				365F86E8253A3D7000572E11 /* Sources */,
-				365F86E9253A3D7000572E11 /* Frameworks */,
-				365F86EA253A3D7000572E11 /* Resources */,
+				366C96A0253F53F100D5A9EE /* Sources */,
+				366C96A1253F53F100D5A9EE /* Frameworks */,
+				366C96A2253F53F100D5A9EE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				365F86EE253A3D7000572E11 /* PBXTargetDependency */,
+				366C96A6253F53F100D5A9EE /* PBXTargetDependency */,
 			);
-			name = FlamingoUITests;
-			productName = FlamingoUITests;
-			productReference = 365F86EC253A3D7000572E11 /* FlamingoUITests.xctest */;
+			name = flamingoUITests;
+			productName = flamingoUITests;
+			productReference = 366C96A4253F53F100D5A9EE /* flamingoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		365F86C6253A3D6D00572E11 /* Project object */ = {
+		366C967B253F53F000D5A9EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					365F86CD253A3D6D00572E11 = {
+					366C9682253F53F000D5A9EE = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
-					365F86E0253A3D7000572E11 = {
+					366C9698253F53F100D5A9EE = {
 						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = 365F86CD253A3D6D00572E11;
+						TestTargetID = 366C9682253F53F000D5A9EE;
 					};
-					365F86EB253A3D7000572E11 = {
+					366C96A3253F53F100D5A9EE = {
 						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = 365F86CD253A3D6D00572E11;
+						TestTargetID = 366C9682253F53F000D5A9EE;
 					};
 				};
 			};
-			buildConfigurationList = 365F86C9253A3D6D00572E11 /* Build configuration list for PBXProject "Flamingo" */;
+			buildConfigurationList = 366C967E253F53F000D5A9EE /* Build configuration list for PBXProject "flamingo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,36 +222,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 365F86C5253A3D6D00572E11;
-			productRefGroup = 365F86CF253A3D6D00572E11 /* Products */;
+			mainGroup = 366C967A253F53F000D5A9EE;
+			productRefGroup = 366C9684253F53F000D5A9EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				365F86CD253A3D6D00572E11 /* Flamingo */,
-				365F86E0253A3D7000572E11 /* FlamingoTests */,
-				365F86EB253A3D7000572E11 /* FlamingoUITests */,
+				366C9682253F53F000D5A9EE /* flamingo */,
+				366C9698253F53F100D5A9EE /* flamingoTests */,
+				366C96A3253F53F100D5A9EE /* flamingoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		365F86CC253A3D6D00572E11 /* Resources */ = {
+		366C9681253F53F000D5A9EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				365F86DB253A3D7000572E11 /* Preview Assets.xcassets in Resources */,
-				365F86D8253A3D7000572E11 /* Assets.xcassets in Resources */,
+				366C9693253F53F100D5A9EE /* LaunchScreen.storyboard in Resources */,
+				366C9690253F53F100D5A9EE /* Preview Assets.xcassets in Resources */,
+				366C968D253F53F100D5A9EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		365F86DF253A3D7000572E11 /* Resources */ = {
+		366C9697253F53F100D5A9EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		365F86EA253A3D7000572E11 /* Resources */ = {
+		366C96A2253F53F100D5A9EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,49 +262,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		365F86CA253A3D6D00572E11 /* Sources */ = {
+		366C967F253F53F000D5A9EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				365F86D4253A3D6D00572E11 /* ContentView.swift in Sources */,
-				365F86D2253A3D6D00572E11 /* AppDelegate.swift in Sources */,
-				365F86D6253A3D6D00572E11 /* Experience.rcproject in Sources */,
+				366C9689253F53F000D5A9EE /* ContentView.swift in Sources */,
+				366C9687253F53F000D5A9EE /* AppDelegate.swift in Sources */,
+				366C968B253F53F000D5A9EE /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		365F86DD253A3D7000572E11 /* Sources */ = {
+		366C9695253F53F100D5A9EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				365F86E6253A3D7000572E11 /* FlamingoTests.swift in Sources */,
+				366C969E253F53F100D5A9EE /* flamingoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		365F86E8253A3D7000572E11 /* Sources */ = {
+		366C96A0253F53F100D5A9EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				365F86F1253A3D7000572E11 /* FlamingoUITests.swift in Sources */,
+				366C96A9253F53F100D5A9EE /* flamingoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		365F86E3253A3D7000572E11 /* PBXTargetDependency */ = {
+		366C969B253F53F100D5A9EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 365F86CD253A3D6D00572E11 /* Flamingo */;
-			targetProxy = 365F86E2253A3D7000572E11 /* PBXContainerItemProxy */;
+			target = 366C9682253F53F000D5A9EE /* flamingo */;
+			targetProxy = 366C969A253F53F100D5A9EE /* PBXContainerItemProxy */;
 		};
-		365F86EE253A3D7000572E11 /* PBXTargetDependency */ = {
+		366C96A6253F53F100D5A9EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 365F86CD253A3D6D00572E11 /* Flamingo */;
-			targetProxy = 365F86ED253A3D7000572E11 /* PBXContainerItemProxy */;
+			target = 366C9682253F53F000D5A9EE /* flamingo */;
+			targetProxy = 366C96A5253F53F100D5A9EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		366C9691253F53F100D5A9EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				366C9692253F53F100D5A9EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		365F86F3253A3D7000572E11 /* Debug */ = {
+		366C96AB253F53F100D5A9EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,7 +376,7 @@
 			};
 			name = Debug;
 		};
-		365F86F4253A3D7000572E11 /* Release */ = {
+		366C96AC253F53F100D5A9EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -416,168 +431,172 @@
 			};
 			name = Release;
 		};
-		365F86F6253A3D7000572E11 /* Debug */ = {
+		366C96AE253F53F100D5A9EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Flamingo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"flamingo/Preview Content\"";
 				DEVELOPMENT_TEAM = 9Y67R9P3DN;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Flamingo/Info.plist;
+				INFOPLIST_FILE = flamingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.Flamingo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.flamingo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		365F86F7253A3D7000572E11 /* Release */ = {
+		366C96AF253F53F100D5A9EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Flamingo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"flamingo/Preview Content\"";
 				DEVELOPMENT_TEAM = 9Y67R9P3DN;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Flamingo/Info.plist;
+				INFOPLIST_FILE = flamingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.Flamingo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.flamingo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		365F86F9253A3D7000572E11 /* Debug */ = {
+		366C96B1253F53F100D5A9EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FlamingoTests/Info.plist;
+				DEVELOPMENT_TEAM = 9Y67R9P3DN;
+				INFOPLIST_FILE = flamingoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.FlamingoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.flamingoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flamingo.app/Flamingo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flamingo.app/flamingo";
 			};
 			name = Debug;
 		};
-		365F86FA253A3D7000572E11 /* Release */ = {
+		366C96B2253F53F100D5A9EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FlamingoTests/Info.plist;
+				DEVELOPMENT_TEAM = 9Y67R9P3DN;
+				INFOPLIST_FILE = flamingoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.FlamingoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.flamingoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flamingo.app/Flamingo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flamingo.app/flamingo";
 			};
 			name = Release;
 		};
-		365F86FC253A3D7000572E11 /* Debug */ = {
+		366C96B4253F53F100D5A9EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FlamingoUITests/Info.plist;
+				DEVELOPMENT_TEAM = 9Y67R9P3DN;
+				INFOPLIST_FILE = flamingoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.FlamingoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.flamingoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Flamingo;
+				TEST_TARGET_NAME = flamingo;
 			};
 			name = Debug;
 		};
-		365F86FD253A3D7000572E11 /* Release */ = {
+		366C96B5253F53F100D5A9EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FlamingoUITests/Info.plist;
+				DEVELOPMENT_TEAM = 9Y67R9P3DN;
+				INFOPLIST_FILE = flamingoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.FlamingoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razvangeangu.flamingoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Flamingo;
+				TEST_TARGET_NAME = flamingo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		365F86C9253A3D6D00572E11 /* Build configuration list for PBXProject "Flamingo" */ = {
+		366C967E253F53F000D5A9EE /* Build configuration list for PBXProject "flamingo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				365F86F3253A3D7000572E11 /* Debug */,
-				365F86F4253A3D7000572E11 /* Release */,
+				366C96AB253F53F100D5A9EE /* Debug */,
+				366C96AC253F53F100D5A9EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		365F86F5253A3D7000572E11 /* Build configuration list for PBXNativeTarget "Flamingo" */ = {
+		366C96AD253F53F100D5A9EE /* Build configuration list for PBXNativeTarget "flamingo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				365F86F6253A3D7000572E11 /* Debug */,
-				365F86F7253A3D7000572E11 /* Release */,
+				366C96AE253F53F100D5A9EE /* Debug */,
+				366C96AF253F53F100D5A9EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		365F86F8253A3D7000572E11 /* Build configuration list for PBXNativeTarget "FlamingoTests" */ = {
+		366C96B0253F53F100D5A9EE /* Build configuration list for PBXNativeTarget "flamingoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				365F86F9253A3D7000572E11 /* Debug */,
-				365F86FA253A3D7000572E11 /* Release */,
+				366C96B1253F53F100D5A9EE /* Debug */,
+				366C96B2253F53F100D5A9EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		365F86FB253A3D7000572E11 /* Build configuration list for PBXNativeTarget "FlamingoUITests" */ = {
+		366C96B3253F53F100D5A9EE /* Build configuration list for PBXNativeTarget "flamingoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				365F86FC253A3D7000572E11 /* Debug */,
-				365F86FD253A3D7000572E11 /* Release */,
+				366C96B4253F53F100D5A9EE /* Debug */,
+				366C96B5253F53F100D5A9EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 365F86C6253A3D6D00572E11 /* Project object */;
+	rootObject = 366C967B253F53F000D5A9EE /* Project object */;
 }

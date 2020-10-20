@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Flamingo
+//  flamingo
 //
-//  Created by Răzvan-Gabriel Geangu on 16/10/2020.
+//  Created by Răzvan-Gabriel Geangu on 20/10/2020.
 //
 
 import SwiftUI
@@ -10,12 +10,33 @@ import RealityKit
 
 struct ContentView: View {
     @State var totalBalance: Float = 12345.0
+    @State var password: String = ""
     
     var body: some View {
-        return ARViewContainer(totalBalance: $totalBalance).edgesIgnoringSafeArea(.all).onTapGesture {
-            print("Tap ...")
-            self.totalBalance = Float.random(in: 999...4999)
-        }
+        ZStack(content: {
+            ARViewContainer(totalBalance: $totalBalance)
+                .overlay(Blur())
+                .edgesIgnoringSafeArea(.all)
+                .onTapGesture {
+                    print("Tap ...")
+                    self.totalBalance = Float.random(in: 999...4999)
+                }
+            TextField("Mama", text: $password)
+                .keyboardType(.numberPad)
+                .border(Color.gray, width: 1)
+        })
+    }
+}
+
+struct Blur: UIViewRepresentable {
+    var style: UIBlurEffect.Style = .systemUltraThinMaterialDark
+    
+    func makeUIView(context: Context) -> UIVisualEffectView {
+        return UIVisualEffectView(effect: UIBlurEffect(style: style))
+    }
+    
+    func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
+        uiView.effect = UIBlurEffect(style: style)
     }
 }
 

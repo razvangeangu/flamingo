@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Flamingo
+//  flamingo
 //
-//  Created by Răzvan-Gabriel Geangu on 16/10/2020.
+//  Created by Răzvan-Gabriel Geangu on 20/10/2020.
 //
 
 import UIKit
