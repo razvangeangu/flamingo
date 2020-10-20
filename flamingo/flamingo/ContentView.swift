@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import RealityKit
 
 struct ContentView: View {
     @State var totalBalance: Float = 12345.0
@@ -18,12 +17,14 @@ struct ContentView: View {
                 .overlay(Blur())
                 .edgesIgnoringSafeArea(.all)
                 .onTapGesture {
-                    print("Tap ...")
-                    self.totalBalance = Float.random(in: 999...4999)
+                    hideKeyboard()
+                    let typingPattern = TypingDNARecorderMobile.getTypingPattern(1, 0, "12345", 0)
+                    print(typingPattern)
+                    // self.totalBalance = Float.random(in: 999...4999)
                 }
-            TextField("Mama", text: $password)
-                .keyboardType(.numberPad)
-                .border(Color.gray, width: 1)
+//            Add a big label and a description of how to register to use TypingDNA for authentication when trying to get credit card banking details
+            TypingDNATextField()
+                .frame(width: UIScreen.main.bounds.width * 0.8, height: 60, alignment: .center)
         })
     }
 }
@@ -40,42 +41,21 @@ struct Blur: UIViewRepresentable {
     }
 }
 
-struct ARViewContainer: UIViewRepresentable {
-    var totalBalance: Binding<Float>!
-    
-    func makeUIView(context: Context) -> ARView {
-        let uiView = ARView(frame: .zero)
-        
-        uiView.scene.anchors.append(makeBalanceLabel())
-        
-        return uiView
-    }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {
-        uiView.scene.anchors.removeAll()
-        uiView.scene.anchors.append(makeBalanceLabel())
-    }
-    
-    private func makeBalanceLabel() -> Experience.Card {
-        let cardAnchor = try! Experience.loadCard()
-        var textModelComponent: ModelComponent = cardAnchor.totalBalanceLabel!.children[0].children[0].components[ModelComponent] as! ModelComponent
-        
-        textModelComponent.mesh = .generateText("\(self.totalBalance!.wrappedValue)",
-                                                extrusionDepth: 0,
-                                                font: .systemFont(ofSize: 0.1),
-                                                containerFrame: CGRect.zero,
-                                                alignment: .center,
-                                                lineBreakMode: .byCharWrapping)
-        cardAnchor.totalBalanceLabel!.children[0].children[0].components.set(textModelComponent)
-        
-        return cardAnchor
-    }
-}
+
 
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+#endif
+
+
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 #endif

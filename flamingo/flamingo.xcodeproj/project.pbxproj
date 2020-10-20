@@ -15,6 +15,11 @@
 		366C9693253F53F100D5A9EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366C9691253F53F100D5A9EE /* LaunchScreen.storyboard */; };
 		366C969E253F53F100D5A9EE /* flamingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C969D253F53F100D5A9EE /* flamingoTests.swift */; };
 		366C96A9253F53F100D5A9EE /* flamingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C96A8253F53F100D5A9EE /* flamingoUITests.swift */; };
+		36F39845253F85940017DC5B /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F39844253F85940017DC5B /* ARViewContainer.swift */; };
+		36F3984C253F86820017DC5B /* TypingDNATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3984B253F86820017DC5B /* TypingDNATextField.swift */; };
+		36F39856253F87D30017DC5B /* TypingDNARecorderMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F39855253F87D30017DC5B /* TypingDNARecorderMobile.swift */; };
+		36F3985E253F92380017DC5B /* TypingDNAAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3985D253F92380017DC5B /* TypingDNAAPI.swift */; };
+		36F39863253F93670017DC5B /* CardNumberIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F39862253F93670017DC5B /* CardNumberIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,12 @@
 		366C96A4253F53F100D5A9EE /* flamingoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flamingoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		366C96A8253F53F100D5A9EE /* flamingoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flamingoUITests.swift; sourceTree = "<group>"; };
 		366C96AA253F53F100D5A9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F39844253F85940017DC5B /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		36F3984B253F86820017DC5B /* TypingDNATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingDNATextField.swift; sourceTree = "<group>"; };
+		36F39854253F87D30017DC5B /* TypingDNARecorderMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypingDNARecorderMobile.h; path = ../../../../playgrounds/MyPlayground2.playground/Sources/TypingDNARecorderMobile.h; sourceTree = "<group>"; };
+		36F39855253F87D30017DC5B /* TypingDNARecorderMobile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TypingDNARecorderMobile.swift; path = ../../../../playgrounds/MyPlayground2.playground/Sources/TypingDNARecorderMobile.swift; sourceTree = "<group>"; };
+		36F3985D253F92380017DC5B /* TypingDNAAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingDNAAPI.swift; sourceTree = "<group>"; };
+		36F39862253F93670017DC5B /* CardNumberIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNumberIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +110,8 @@
 		366C9685253F53F000D5A9EE /* flamingo */ = {
 			isa = PBXGroup;
 			children = (
+				36F3984A253F865E0017DC5B /* AR */,
+				36F39849253F864C0017DC5B /* Authentication */,
 				366C9686253F53F000D5A9EE /* AppDelegate.swift */,
 				366C9688253F53F000D5A9EE /* ContentView.swift */,
 				366C968A253F53F000D5A9EE /* Experience.rcproject */,
@@ -134,6 +147,34 @@
 				366C96AA253F53F100D5A9EE /* Info.plist */,
 			);
 			path = flamingoUITests;
+			sourceTree = "<group>";
+		};
+		36F39849253F864C0017DC5B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				36F39853253F87940017DC5B /* TypingDNA */,
+				36F3984B253F86820017DC5B /* TypingDNATextField.swift */,
+				36F3985D253F92380017DC5B /* TypingDNAAPI.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		36F3984A253F865E0017DC5B /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				36F39844253F85940017DC5B /* ARViewContainer.swift */,
+				36F39862253F93670017DC5B /* CardNumberIdentifier.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		36F39853253F87940017DC5B /* TypingDNA */ = {
+			isa = PBXGroup;
+			children = (
+				36F39854253F87D30017DC5B /* TypingDNARecorderMobile.h */,
+				36F39855253F87D30017DC5B /* TypingDNARecorderMobile.swift */,
+			);
+			path = TypingDNA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F39856253F87D30017DC5B /* TypingDNARecorderMobile.swift in Sources */,
 				366C9689253F53F000D5A9EE /* ContentView.swift in Sources */,
+				36F39845253F85940017DC5B /* ARViewContainer.swift in Sources */,
+				36F39863253F93670017DC5B /* CardNumberIdentifier.swift in Sources */,
 				366C9687253F53F000D5A9EE /* AppDelegate.swift in Sources */,
+				36F3984C253F86820017DC5B /* TypingDNATextField.swift in Sources */,
+				36F3985E253F92380017DC5B /* TypingDNAAPI.swift in Sources */,
 				366C968B253F53F000D5A9EE /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

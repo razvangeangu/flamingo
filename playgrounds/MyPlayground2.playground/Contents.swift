@@ -63,7 +63,7 @@ class TextFieldViewController : UIViewController, UITextFieldDelegate {
     }
     
     @objc func updateView() {
-        let typingPattern = TypingDNARecorderMobile.getTypingPattern(1, 0, "Please", 0, textField);
+        let typingPattern = TypingDNARecorderMobile.getTypingPattern(1, 0, "Please", 0);
         print("Type 1: ", typingPattern);
     }
 
