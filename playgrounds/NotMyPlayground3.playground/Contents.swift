@@ -11,7 +11,7 @@ import PlaygroundSupport
 //}
 //task.resume()
 
-
+let Url = String(format: "https://api.typingdna.com")
 var id = "testuser"
 let apiKey = "ce1475182ff875a47811ff880e6ee886"
 let apiKeyEnc = "Y2UxNDc1MTgyZmY4NzVhNDc4MTFmZjg4MGU2ZWU4ODY="
@@ -22,13 +22,12 @@ let testTp = "0, 2.11, 0, 0, 18, 1473785675, 4, 82, 13, 0, -1, -1, 0, -1, -1, 12
 
 func register(typingPattern: String) {
     
-    
-    let Url = String(format: "https://api.typingdna.com")
-    let serviceUrl = URL(string: Url + "/save/" + String(id))
+    let serviceUrl = URL(string: Url + "/save/" + id)
     let parameters: [String: Any] = [
 //        "request": [
 //            "id":"\(id)",
-            "tp" : "\(testTp)",
+        "tp" : "\(testTp)",
+        "custom_field" : "Shaorma"
 //        ]
     ]
     var request = URLRequest(url: serviceUrl!)
@@ -54,3 +53,38 @@ func register(typingPattern: String) {
     }.resume()
 }
 register(typingPattern: "")
+
+
+
+func identify() -> Bool {
+    
+    let serviceUrl = URL(string: Url + "/verify/" + id)
+    let parameters: [String: Any] = [
+        "tp":"\(testTp)"
+    ]
+    
+    var request = URLRequest(url: serviceUrl!)
+    request.httpMethod = "POST"
+    request.setValue("application/form-data", forHTTPHeaderField: "Content-Type")
+    request.setValue(str, forHTTPHeaderField: "Authorization")
+    let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: [])
+    request.httpBody = httpBody
+    request.timeoutInterval = 20
+    let session = URLSession.shared
+    session.dataTask(with: request) { (data, response, error) in
+        if let response = response {
+            print(response)
+        }
+        if let data = data {
+            do {
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                print(json)
+            } catch {
+                print(error)
+            }
+        }
+    }.resume()
+    return false
+}
+//identify()
+    
