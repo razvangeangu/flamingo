@@ -19,7 +19,7 @@
 		36F39845253F85940017DC5B /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F39844253F85940017DC5B /* ARViewContainer.swift */; };
 		36F3984C253F86820017DC5B /* TypingDNATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3984B253F86820017DC5B /* TypingDNATextField.swift */; };
 		36F3985E253F92380017DC5B /* TypingDNAAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3985D253F92380017DC5B /* TypingDNAAPI.swift */; };
-		36F39863253F93670017DC5B /* CardNumberIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F39862253F93670017DC5B /* CardNumberIdentifier.swift */; };
+		36F39863253F93670017DC5B /* CardIOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F39862253F93670017DC5B /* CardIOViewController.swift */; };
 		36F92A4D2540D06500417126 /* TypingDNARecorderMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F92A4C2540D06500417126 /* TypingDNARecorderMobile.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,7 @@
 		36F39844253F85940017DC5B /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		36F3984B253F86820017DC5B /* TypingDNATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingDNATextField.swift; sourceTree = "<group>"; };
 		36F3985D253F92380017DC5B /* TypingDNAAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingDNAAPI.swift; sourceTree = "<group>"; };
-		36F39862253F93670017DC5B /* CardNumberIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNumberIdentifier.swift; sourceTree = "<group>"; };
+		36F39862253F93670017DC5B /* CardIOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIOViewController.swift; sourceTree = "<group>"; };
 		36F92A4B2540D06500417126 /* TypingDNARecorderMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypingDNARecorderMobile.h; sourceTree = "<group>"; };
 		36F92A4C2540D06500417126 /* TypingDNARecorderMobile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypingDNARecorderMobile.swift; sourceTree = "<group>"; };
 		5DBD36EB689C53D2CF82422B /* Pods-flamingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flamingo.release.xcconfig"; path = "Target Support Files/Pods-flamingo/Pods-flamingo.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				36F39844253F85940017DC5B /* ARViewContainer.swift */,
-				36F39862253F93670017DC5B /* CardNumberIdentifier.swift */,
+				36F39862253F93670017DC5B /* CardIOViewController.swift */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -361,7 +361,7 @@
 			files = (
 				366C9689253F53F000D5A9EE /* ContentView.swift in Sources */,
 				36F39845253F85940017DC5B /* ARViewContainer.swift in Sources */,
-				36F39863253F93670017DC5B /* CardNumberIdentifier.swift in Sources */,
+				36F39863253F93670017DC5B /* CardIOViewController.swift in Sources */,
 				366C9687253F53F000D5A9EE /* AppDelegate.swift in Sources */,
 				36F3984C253F86820017DC5B /* TypingDNATextField.swift in Sources */,
 				36F92A4D2540D06500417126 /* TypingDNARecorderMobile.swift in Sources */,

@@ -30,9 +30,12 @@ struct TypingDNATextField: UIViewRepresentable {
     func makeUIView(context: Context) -> UITextField {
         let textField = UITextField()
         textField.keyboardType = .numberPad
-        textField.backgroundColor = .none
+        textField.backgroundColor = UIColor.white.withAlphaComponent(0.2)
         textField.textAlignment = .center
-        textField.borderStyle = .bezel
+        textField.textColor = .white
+        textField.layer.cornerRadius = 30.0
+        textField.layer.borderWidth = 1.0
+        textField.layer.borderColor = UIColor.white.cgColor
         
         TypingDNARecorderMobile.addTarget(textField)
 

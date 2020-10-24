@@ -8,33 +8,47 @@
 import SwiftUI
 import RealityKit
 
-struct ARViewContainer: UIViewControllerRepresentable {
+struct ARViewContainer: UIViewControllerRepresentable, CardIOViewControllerDelegate {
     @Binding var totalBalance: Float
+    @State var cardNumber: String?
+    var action: ((_ cardNumber: String) -> Void)?
     
     typealias UIViewControllerType = CardIOViewController
     
     func makeUIViewController(context: Context) -> CardIOViewController {
         let mainVC = CardIOViewController()
-        let arView = ARView(frame: mainVC.view.frame)
-        arView.scene.anchors.append(makeBalanceLabel())
-        
+        mainVC.delegate = self
         mainVC.view.backgroundColor = .clear
-//        mainVC.view.addSubview(arView)
         
         return mainVC
     }
     
     func updateUIViewController(_ uiViewController: CardIOViewController, context: Context) {
-//        let arView = uiViewController.view.subviews[0] as! ARView
-//        arView.scene.anchors.removeAll()
-//        arView.scene.anchors.append(makeBalanceLabel())
+        if cardNumber != nil {
+            let arView = ARView(frame: uiViewController.view.frame)
+            arView.tag = 420
+            arView.scene.anchors.append(makeBalanceLabel())
+            uiViewController.view.addSubview(arView)
+        }
+        
+        if let arView = uiViewController.view.viewWithTag(420) as? ARView {
+            arView.scene.anchors.removeAll()
+            arView.scene.anchors.append(makeBalanceLabel())
+        }
+    }
+    
+    func cardIOView(didScanCard cardInfo: CardIOCreditCardInfo!) {
+        cardNumber = cardInfo.cardNumber
+        if let action = action {
+            action(cardNumber!)
+        }
     }
     
     private func makeBalanceLabel() -> Experience.Card {
         let cardAnchor = try! Experience.loadCard()
         var textModelComponent: ModelComponent = cardAnchor.totalBalanceLabel!.children[0].children[0].components[ModelComponent] as! ModelComponent
         
-        textModelComponent.mesh = .generateText("\($totalBalance)",
+        textModelComponent.mesh = .generateText("\(totalBalance)",
                                                 extrusionDepth: 0,
                                                 font: .systemFont(ofSize: 0.1),
                                                 containerFrame: CGRect.zero,
@@ -43,5 +57,13 @@ struct ARViewContainer: UIViewControllerRepresentable {
         cardAnchor.totalBalanceLabel!.children[0].children[0].components.set(textModelComponent)
         
         return cardAnchor
+    }
+}
+
+extension ARViewContainer {
+    public func onCardInfoReceived(perform action: @escaping (_ cardNumber: String) -> Void ) -> Self {
+        var copy = self
+        copy.action = action
+        return copy
     }
 }
