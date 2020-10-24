@@ -8,28 +8,6 @@
 import SwiftUI
 import RealityKit
 
-class CardIOViewController: UIViewController, CardIOViewDelegate {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        CardIOUtilities.canReadCardWithCamera()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        CardIOUtilities.preloadCardIO()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        let cardIOView = CardIOView(frame: self.view.frame)
-        cardIOView.delegate = self
-        self.view.addSubview(cardIOView)
-    }
-    
-    func cardIOView(_ cardIOView: CardIOView!, didScanCard cardInfo: CardIOCreditCardInfo!) {
-        print(cardInfo.cardNumber ?? "")
-    }
-}
-
 struct ARViewContainer: UIViewControllerRepresentable {
     @Binding var totalBalance: Float
     
