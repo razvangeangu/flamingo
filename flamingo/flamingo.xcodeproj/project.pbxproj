@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026068BE80495618789544B5 /* libPods-flamingo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC1D2FEAD055D339BF2E8D4 /* libPods-flamingo.a */; };
 		366C9687253F53F000D5A9EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C9686253F53F000D5A9EE /* AppDelegate.swift */; };
 		366C9689253F53F000D5A9EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C9688253F53F000D5A9EE /* ContentView.swift */; };
 		366C968B253F53F000D5A9EE /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 366C968A253F53F000D5A9EE /* Experience.rcproject */; };
@@ -17,9 +18,9 @@
 		366C96A9253F53F100D5A9EE /* flamingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C96A8253F53F100D5A9EE /* flamingoUITests.swift */; };
 		36F39845253F85940017DC5B /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F39844253F85940017DC5B /* ARViewContainer.swift */; };
 		36F3984C253F86820017DC5B /* TypingDNATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3984B253F86820017DC5B /* TypingDNATextField.swift */; };
-		36F39856253F87D30017DC5B /* TypingDNARecorderMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F39855253F87D30017DC5B /* TypingDNARecorderMobile.swift */; };
 		36F3985E253F92380017DC5B /* TypingDNAAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3985D253F92380017DC5B /* TypingDNAAPI.swift */; };
 		36F39863253F93670017DC5B /* CardNumberIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F39862253F93670017DC5B /* CardNumberIdentifier.swift */; };
+		36F92A4D2540D06500417126 /* TypingDNARecorderMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F92A4C2540D06500417126 /* TypingDNARecorderMobile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +55,16 @@
 		366C96A4253F53F100D5A9EE /* flamingoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flamingoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		366C96A8253F53F100D5A9EE /* flamingoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flamingoUITests.swift; sourceTree = "<group>"; };
 		366C96AA253F53F100D5A9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36C1C62125445AC200E26150 /* Flamingo-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flamingo-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		36F39844253F85940017DC5B /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		36F3984B253F86820017DC5B /* TypingDNATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingDNATextField.swift; sourceTree = "<group>"; };
-		36F39854253F87D30017DC5B /* TypingDNARecorderMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypingDNARecorderMobile.h; path = ../../../../playgrounds/MyPlayground2.playground/Sources/TypingDNARecorderMobile.h; sourceTree = "<group>"; };
-		36F39855253F87D30017DC5B /* TypingDNARecorderMobile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TypingDNARecorderMobile.swift; path = ../../../../playgrounds/MyPlayground2.playground/Sources/TypingDNARecorderMobile.swift; sourceTree = "<group>"; };
 		36F3985D253F92380017DC5B /* TypingDNAAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingDNAAPI.swift; sourceTree = "<group>"; };
 		36F39862253F93670017DC5B /* CardNumberIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNumberIdentifier.swift; sourceTree = "<group>"; };
+		36F92A4B2540D06500417126 /* TypingDNARecorderMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypingDNARecorderMobile.h; sourceTree = "<group>"; };
+		36F92A4C2540D06500417126 /* TypingDNARecorderMobile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypingDNARecorderMobile.swift; sourceTree = "<group>"; };
+		5DBD36EB689C53D2CF82422B /* Pods-flamingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flamingo.release.xcconfig"; path = "Target Support Files/Pods-flamingo/Pods-flamingo.release.xcconfig"; sourceTree = "<group>"; };
+		68BB58A81C275D5B7918B6D8 /* Pods-flamingo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flamingo.debug.xcconfig"; path = "Target Support Files/Pods-flamingo/Pods-flamingo.debug.xcconfig"; sourceTree = "<group>"; };
+		CCC1D2FEAD055D339BF2E8D4 /* libPods-flamingo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-flamingo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026068BE80495618789544B5 /* libPods-flamingo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,8 @@
 				366C969C253F53F100D5A9EE /* flamingoTests */,
 				366C96A7253F53F100D5A9EE /* flamingoUITests */,
 				366C9684253F53F000D5A9EE /* Products */,
+				CB041F5C882ADADD87F9EF78 /* Pods */,
+				8313EE6644F8448C634B74ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +122,7 @@
 				36F39849253F864C0017DC5B /* Authentication */,
 				366C9686253F53F000D5A9EE /* AppDelegate.swift */,
 				366C9688253F53F000D5A9EE /* ContentView.swift */,
+				36C1C62125445AC200E26150 /* Flamingo-Swift-Bridging-Header.h */,
 				366C968A253F53F000D5A9EE /* Experience.rcproject */,
 				366C968C253F53F100D5A9EE /* Assets.xcassets */,
 				366C9691253F53F100D5A9EE /* LaunchScreen.storyboard */,
@@ -171,10 +180,27 @@
 		36F39853253F87940017DC5B /* TypingDNA */ = {
 			isa = PBXGroup;
 			children = (
-				36F39854253F87D30017DC5B /* TypingDNARecorderMobile.h */,
-				36F39855253F87D30017DC5B /* TypingDNARecorderMobile.swift */,
+				36F92A4B2540D06500417126 /* TypingDNARecorderMobile.h */,
+				36F92A4C2540D06500417126 /* TypingDNARecorderMobile.swift */,
 			);
 			path = TypingDNA;
+			sourceTree = "<group>";
+		};
+		8313EE6644F8448C634B74ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1D2FEAD055D339BF2E8D4 /* libPods-flamingo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB041F5C882ADADD87F9EF78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68BB58A81C275D5B7918B6D8 /* Pods-flamingo.debug.xcconfig */,
+				5DBD36EB689C53D2CF82422B /* Pods-flamingo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 366C96AD253F53F100D5A9EE /* Build configuration list for PBXNativeTarget "flamingo" */;
 			buildPhases = (
+				0E4BC5101B8F7550F5DD4FB0 /* [CP] Check Pods Manifest.lock */,
 				366C967F253F53F000D5A9EE /* Sources */,
 				366C9680253F53F000D5A9EE /* Frameworks */,
 				366C9681253F53F000D5A9EE /* Resources */,
@@ -302,17 +329,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E4BC5101B8F7550F5DD4FB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flamingo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		366C967F253F53F000D5A9EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F39856253F87D30017DC5B /* TypingDNARecorderMobile.swift in Sources */,
 				366C9689253F53F000D5A9EE /* ContentView.swift in Sources */,
 				36F39845253F85940017DC5B /* ARViewContainer.swift in Sources */,
 				36F39863253F93670017DC5B /* CardNumberIdentifier.swift in Sources */,
 				366C9687253F53F000D5A9EE /* AppDelegate.swift in Sources */,
 				36F3984C253F86820017DC5B /* TypingDNATextField.swift in Sources */,
+				36F92A4D2540D06500417126 /* TypingDNARecorderMobile.swift in Sources */,
 				36F3985E253F92380017DC5B /* TypingDNAAPI.swift in Sources */,
 				366C968B253F53F000D5A9EE /* Experience.rcproject in Sources */,
 			);
@@ -479,6 +531,7 @@
 		};
 		366C96AE253F53F100D5A9EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68BB58A81C275D5B7918B6D8 /* Pods-flamingo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -500,6 +553,7 @@
 		};
 		366C96AF253F53F100D5A9EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DBD36EB689C53D2CF82422B /* Pods-flamingo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
