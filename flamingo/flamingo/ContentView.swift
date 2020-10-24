@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         ZStack(content: {
             ARViewContainer(totalBalance: $totalBalance)
-                .overlay(Blur())
+//                .overlay(Blur())
                 .edgesIgnoringSafeArea(.all)
                 .onTapGesture {
                     hideKeyboard()
@@ -23,8 +23,8 @@ struct ContentView: View {
                     // self.totalBalance = Float.random(in: 999...4999)
                 }
 //            Add a big label and a description of how to register to use TypingDNA for authentication when trying to get credit card banking details
-            TypingDNATextField()
-                .frame(width: UIScreen.main.bounds.width * 0.8, height: 60, alignment: .center)
+//            TypingDNATextField()
+//                .frame(width: UIScreen.main.bounds.width * 0.8, height: 60, alignment: .center)
         })
     }
 }

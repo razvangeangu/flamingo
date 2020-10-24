@@ -8,20 +8,48 @@
 import SwiftUI
 import RealityKit
 
-struct ARViewContainer: UIViewRepresentable {
-    @Binding var totalBalance: Float
-    
-    func makeUIView(context: Context) -> ARView {
-        let uiView = ARView(frame: .zero)
-        
-        uiView.scene.anchors.append(makeBalanceLabel())
-        
-        return uiView
+class CardIOViewController: UIViewController, CardIOViewDelegate {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        CardIOUtilities.canReadCardWithCamera()
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {
-        uiView.scene.anchors.removeAll()
-        uiView.scene.anchors.append(makeBalanceLabel())
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        CardIOUtilities.preloadCardIO()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let cardIOView = CardIOView(frame: self.view.frame)
+        cardIOView.delegate = self
+        self.view.addSubview(cardIOView)
+    }
+    
+    func cardIOView(_ cardIOView: CardIOView!, didScanCard cardInfo: CardIOCreditCardInfo!) {
+        print(cardInfo.cardNumber ?? "")
+    }
+}
+
+struct ARViewContainer: UIViewControllerRepresentable {
+    @Binding var totalBalance: Float
+    
+    typealias UIViewControllerType = CardIOViewController
+    
+    func makeUIViewController(context: Context) -> CardIOViewController {
+        let mainVC = CardIOViewController()
+        let arView = ARView(frame: mainVC.view.frame)
+        arView.scene.anchors.append(makeBalanceLabel())
+        
+        mainVC.view.backgroundColor = .clear
+//        mainVC.view.addSubview(arView)
+        
+        return mainVC
+    }
+    
+    func updateUIViewController(_ uiViewController: CardIOViewController, context: Context) {
+//        let arView = uiViewController.view.subviews[0] as! ARView
+//        arView.scene.anchors.removeAll()
+//        arView.scene.anchors.append(makeBalanceLabel())
     }
     
     private func makeBalanceLabel() -> Experience.Card {
