@@ -25,7 +25,7 @@ struct APIResponse: Codable {
 
 private func initRequest(_ route: String) -> URLRequest {
     /// Set up request defaults
-    var request = URLRequest(url: URL(string: "https://api.typingdna.com")!)
+    var request = URLRequest(url: URL(string: "https://api.typingdna.com\(route)")!)
     request.httpMethod = "POST"
     request.setValue(apiAuthentication, forHTTPHeaderField: "Authorization")
     

@@ -5,24 +5,6 @@
 //  Created by Răzvan-Gabriel Geangu on 20/10/2020.
 //
 
-//import SwiftUI
-//
-//struct TypingDNATextField: View {
-//    var body: some View {
-//        TextField("Password", text: Binding.constant(""))
-//            .keyboardType(.numberPad)
-//            .border(Color.gray, width: 1)
-//    }
-//}
-//
-//#if DEBUG
-//struct TypingDNATextField_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TypingDNATextField()
-//    }
-//}
-//#endif
-
 import SwiftUI
 import RealityKit
 
@@ -36,6 +18,7 @@ struct TypingDNATextField: UIViewRepresentable {
         textField.layer.cornerRadius = 30.0
         textField.layer.borderWidth = 1.0
         textField.layer.borderColor = UIColor.white.cgColor
+        textField.becomeFirstResponder()
         
         TypingDNARecorderMobile.addTarget(textField)
 
