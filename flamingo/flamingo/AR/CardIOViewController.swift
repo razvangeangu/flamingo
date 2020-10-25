@@ -9,13 +9,11 @@ import Foundation
 import AVFoundation
 
 protocol CardIOViewControllerDelegate {
+    /// Called when a card information has been recognised.
     func cardIOView(didScanCard cardInfo: CardIOCreditCardInfo!) -> Void
 }
 
 class CardIOViewController: UIViewController, CardIOViewDelegate {
-    var captureSession: AVCaptureSession!
-    var stillImageOutput: AVCapturePhotoOutput!
-    var videoPreviewLayer: AVCaptureVideoPreviewLayer!
     public var delegate: CardIOViewControllerDelegate!
     
     override func viewDidLoad() {
@@ -29,59 +27,19 @@ class CardIOViewController: UIViewController, CardIOViewDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        //        prepareCameraBackground()
-        
         let cardIOView = CardIOView(frame: self.view.frame)
         cardIOView.delegate = self
         cardIOView.tag = 69
         self.view.addSubview(cardIOView)
     }
     
-    func prepareCameraBackground() {
-        captureSession = AVCaptureSession()
-        captureSession.sessionPreset = .photo
-        
-        guard let backCamera = AVCaptureDevice.default(for: .video) else {
-            print("Unable to access back camera!")
-            return
-        }
-        
-        guard let input = try? AVCaptureDeviceInput(device: backCamera) else {
-            print("Error Unable to initialize back camera")
-            return
-        }
-        
-        stillImageOutput = AVCapturePhotoOutput()
-        
-        if captureSession.canAddInput(input) && captureSession.canAddOutput(stillImageOutput) {
-            captureSession.addInput(input)
-            captureSession.addOutput(stillImageOutput)
-            
-            videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-            
-            videoPreviewLayer.videoGravity = .resizeAspectFill
-            videoPreviewLayer.connection?.videoOrientation = .portrait
-            self.view.layer.addSublayer(videoPreviewLayer)
-            
-            let blurView = UIVisualEffectView(effect: UIBlurEffect(style: .regular))
-            blurView.frame = self.view.bounds
-            self.view.addSubview(blurView)
-        }
-        
-        DispatchQueue.global(qos: .userInitiated).async {
-            self.captureSession.startRunning()
-            DispatchQueue.main.async {
-                self.videoPreviewLayer.frame = self.view.bounds
-            }
-        }
-    }
-    
     func cardIOView(_ cardIOView: CardIOView!, didScanCard cardInfo: CardIOCreditCardInfo!) {
+        /// Once the card has been recognised, remove the scanner view
         if let viewWithTag = self.view.viewWithTag(69) {
             viewWithTag.removeFromSuperview()
         }
+        
+        /// Announce the delegate of recognition
         self.delegate.cardIOView(didScanCard: cardInfo)
     }
 }
-
-// Get the video buffer from ARView and identify the credit card number

@@ -8,6 +8,7 @@
 import SwiftUI
 import RealityKit
 
+/// Make text field that will respond to the **TypingDNA** Recorder
 struct TypingDNATextField: UIViewRepresentable {
     func makeUIView(context: Context) -> UITextField {
         let textField = UITextField()

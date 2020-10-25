@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		026068BE80495618789544B5 /* libPods-flamingo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC1D2FEAD055D339BF2E8D4 /* libPods-flamingo.a */; };
+		365B52A325450FBF00EAEDF4 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365B52A225450FBF00EAEDF4 /* Float+Extension.swift */; };
+		365B52C725451E5B00EAEDF4 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365B52C625451E5B00EAEDF4 /* BlurView.swift */; };
+		365B52CC25451E7600EAEDF4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365B52CB25451E7600EAEDF4 /* View+Extension.swift */; };
+		365B52DF2545219600EAEDF4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365B52DE2545219600EAEDF4 /* Constants.swift */; };
 		366C9687253F53F000D5A9EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C9686253F53F000D5A9EE /* AppDelegate.swift */; };
 		366C9689253F53F000D5A9EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C9688253F53F000D5A9EE /* ContentView.swift */; };
 		366C968B253F53F000D5A9EE /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 366C968A253F53F000D5A9EE /* Experience.rcproject */; };
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		365B52A225450FBF00EAEDF4 /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
+		365B52C625451E5B00EAEDF4 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		365B52CB25451E7600EAEDF4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		365B52DE2545219600EAEDF4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		366C9683253F53F000D5A9EE /* flamingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flamingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366C9686253F53F000D5A9EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		366C9688253F53F000D5A9EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +103,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		365B52D625451EDA00EAEDF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				365B52C625451E5B00EAEDF4 /* BlurView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		365B52DD2545218A00EAEDF4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				365B52DE2545219600EAEDF4 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		366C967A253F53F000D5A9EE = {
 			isa = PBXGroup;
 			children = (
@@ -120,17 +144,18 @@
 		366C9685253F53F000D5A9EE /* flamingo */ = {
 			isa = PBXGroup;
 			children = (
+				366C968C253F53F100D5A9EE /* Assets.xcassets */,
+				366C968E253F53F100D5A9EE /* Preview Content */,
 				36F3984A253F865E0017DC5B /* AR */,
 				36F39849253F864C0017DC5B /* Authentication */,
-				366C9686253F53F000D5A9EE /* AppDelegate.swift */,
+				365B52DD2545218A00EAEDF4 /* Constants */,
+				36D25A6B254503B300A7176C /* Extensions */,
+				365B52D625451EDA00EAEDF4 /* Views */,
 				366C9688253F53F000D5A9EE /* ContentView.swift */,
-				36C1C62125445AC200E26150 /* Flamingo-Swift-Bridging-Header.h */,
-				366C968A253F53F000D5A9EE /* Experience.rcproject */,
-				366C968C253F53F100D5A9EE /* Assets.xcassets */,
+				366C9686253F53F000D5A9EE /* AppDelegate.swift */,
 				366C9691253F53F100D5A9EE /* LaunchScreen.storyboard */,
 				366C9694253F53F100D5A9EE /* Info.plist */,
-				366C968E253F53F100D5A9EE /* Preview Content */,
-				367B11C92544AF170096BEAF /* String+Extension.swift */,
+				36C1C62125445AC200E26150 /* Flamingo-Swift-Bridging-Header.h */,
 			);
 			path = flamingo;
 			sourceTree = "<group>";
@@ -161,6 +186,16 @@
 			path = flamingoUITests;
 			sourceTree = "<group>";
 		};
+		36D25A6B254503B300A7176C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				367B11C92544AF170096BEAF /* String+Extension.swift */,
+				365B52A225450FBF00EAEDF4 /* Float+Extension.swift */,
+				365B52CB25451E7600EAEDF4 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		36F39849253F864C0017DC5B /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +209,7 @@
 		36F3984A253F865E0017DC5B /* AR */ = {
 			isa = PBXGroup;
 			children = (
+				366C968A253F53F000D5A9EE /* Experience.rcproject */,
 				36F39844253F85940017DC5B /* ARViewContainer.swift */,
 				36F39862253F93670017DC5B /* CardIOViewController.swift */,
 			);
@@ -217,6 +253,7 @@
 				366C967F253F53F000D5A9EE /* Sources */,
 				366C9680253F53F000D5A9EE /* Frameworks */,
 				366C9681253F53F000D5A9EE /* Resources */,
+				365B52F725452C1D00EAEDF4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -355,6 +392,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		365B52F725452C1D00EAEDF4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -362,14 +416,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365B52C725451E5B00EAEDF4 /* BlurView.swift in Sources */,
 				366C9689253F53F000D5A9EE /* ContentView.swift in Sources */,
 				367B11CA2544AF170096BEAF /* String+Extension.swift in Sources */,
+				365B52A325450FBF00EAEDF4 /* Float+Extension.swift in Sources */,
 				36F39845253F85940017DC5B /* ARViewContainer.swift in Sources */,
 				36F39863253F93670017DC5B /* CardIOViewController.swift in Sources */,
 				366C9687253F53F000D5A9EE /* AppDelegate.swift in Sources */,
+				365B52DF2545219600EAEDF4 /* Constants.swift in Sources */,
 				36F3984C253F86820017DC5B /* TypingDNATextField.swift in Sources */,
 				36F92A4D2540D06500417126 /* TypingDNARecorderMobile.swift in Sources */,
 				36F3985E253F92380017DC5B /* TypingDNAAPI.swift in Sources */,
+				365B52CC25451E7600EAEDF4 /* View+Extension.swift in Sources */,
 				366C968B253F53F000D5A9EE /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 368;
 				DEVELOPMENT_ASSET_PATHS = "\"flamingo/Preview Content\"";
 				DEVELOPMENT_TEAM = 9Y67R9P3DN;
 				ENABLE_PREVIEWS = YES;
@@ -563,6 +622,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 368;
 				DEVELOPMENT_ASSET_PATHS = "\"flamingo/Preview Content\"";
 				DEVELOPMENT_TEAM = 9Y67R9P3DN;
 				ENABLE_PREVIEWS = YES;
