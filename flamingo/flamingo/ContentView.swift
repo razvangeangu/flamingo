@@ -22,6 +22,9 @@ struct ContentView: View {
     /// This displays the authentication error if **TypingDNA** API is not successfull.
     @State var hasAuthError: Bool = false
     
+    /// This displays the error message from the **TypingDNA** API or the `kAuthenticationError`.
+    @State var errorMessage: String = kAuthenticationError
+    
     var body: some View {
         ZStack(content: {
             // MARK: AR Experience & Card recognition
@@ -30,20 +33,20 @@ struct ContentView: View {
                     let index = cardNumber.index(cardNumber.endIndex, offsetBy: -8)
                     self.cardNumber = String(cardNumber[index...])
                 })
-                .overlay(shouldDisplayExperience ? BlurView() : nil)
+                .overlay(self.shouldDisplayExperience ? BlurView() : nil)
                 .edgesIgnoringSafeArea(.all)
                 .onTapGesture {
                     hideKeyboard()
                 }
 
             // MARK: - Identification
-            if shouldDisplayExperience {
+            if self.shouldDisplayExperience {
                 VStack {
                     Text(kInsertCardLabel)
                         .foregroundColor(.white)
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0))
                         .multilineTextAlignment(.center)
-                    Text(cardNumber.creditCardFormat)
+                    Text(self.cardNumber.creditCardFormat)
                         .foregroundColor(.white)
                         .fontWeight(.heavy)
                         .font(Font.system(.title2))
@@ -51,11 +54,12 @@ struct ContentView: View {
                     TypingDNATextField()
                         .frame(width: UIScreen.main.bounds.width * 0.8, height: 60, alignment: .center)
                     Button(kAuthenticateLabel) {
-                        hideKeyboard()
-                        verifyTypingPattern()
+                        self.hideKeyboard()
+                        self.verifyTypingPattern()
                     }
                     .alert(isPresented: $hasAuthError) {
-                        Alert(title: Text(kAuthenticationError), message: Text(kTryAgainLabel), dismissButton: .default(Text(kOk), action: {
+                        Alert(title: Text(self.errorMessage), message: Text(kTryAgainLabel), dismissButton: .default(Text(kOk), action: {
+                            self.errorMessage = kAuthenticationError
                             self.hasAuthError = false
                         }))
                     }
@@ -75,25 +79,31 @@ struct ContentView: View {
         }
     }
     
+    // MARK: - TypingDNA implementation
+    
     /// Save typing pattern using **TypingDNA** API.
-    /// TODO: Generate unique userId (i.e. maybe use the device unique identifier)
     func saveTypingPattern() {
+        guard let id = UIDevice.current.identifierForVendor?.uuidString else {
+            print("Cannot retrieve \"identifierForVendor\"")
+            fatalError()
+        }
         let typingPattern = TypingDNARecorderMobile.getTypingPattern(1, 0, self.cardNumber, 0)
-        TypingDNAAPI.shared.save(typingPattern: typingPattern, id: "razzzy6g")
+        TypingDNAAPI.shared.save(typingPattern: typingPattern, id: id)
     }
     
     /// Identify pattern using **TypingDNA** API.
-    ///
-    /// Test users:
-    ///     - ionut52
-    ///     - razzzy6g
     func verifyTypingPattern() {
+        guard let id = UIDevice.current.identifierForVendor?.uuidString else {
+            print("Cannot retrieve \"identifierForVendor\"")
+            fatalError()
+        }
         let typingPattern = TypingDNARecorderMobile.getTypingPattern(1, 0, self.cardNumber, 0)
-        TypingDNAAPI.shared.verify(typingPattern: typingPattern, id: "razzzy6g") { (response) in
+        TypingDNAAPI.shared.verify(typingPattern: typingPattern, id: id) { (response) in
             if response.result == 1 {
                 self.isAuthenticated = true
             } else {
                 self.isAuthenticated = false
+                self.errorMessage = response.message
                 self.hasAuthError = true
             }
         }
