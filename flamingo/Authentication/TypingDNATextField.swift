@@ -13,6 +13,9 @@ struct TypingDNATextField: UIViewRepresentable {
     /// The value of the text field. It may be used to clear the field when authentication fails.
     @Binding var text: String?
     
+    /// If the text field shoul become first responder when initiliased.
+    @Binding var shouldBecomeFirstResponder: Bool
+    
     func makeUIView(context: Context) -> UITextField {
         let textField = UITextField()
         textField.keyboardType = .numberPad
@@ -23,7 +26,10 @@ struct TypingDNATextField: UIViewRepresentable {
         textField.layer.borderWidth = 1.0
         textField.layer.borderColor = UIColor.white.cgColor
         textField.text = self.text
-        textField.becomeFirstResponder()
+        
+        if self.shouldBecomeFirstResponder {
+            textField.becomeFirstResponder()
+        }
         
         TypingDNARecorderMobile.addTarget(textField)
 

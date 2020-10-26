@@ -58,6 +58,11 @@ extension String {
         }
     }
     
+    func first(characters: Int) -> String {
+        let index = self.index(self.startIndex, offsetBy: characters - 1)
+        return String(self[...index])
+    }
+    
     func final(characters: Int) -> String {
         let index = self.index(self.endIndex, offsetBy: -characters)
         return String(self[index...])

@@ -62,12 +62,14 @@ struct ARViewContainer: UIViewControllerRepresentable, CardIOViewControllerDeleg
     
     func initTracking(in arView: ARView) {
         /// Update label values
-        arDelegate.cardExperienceEntities[1].text = 10832.55.currencyFormat
+        
+        var totalBalance = 10832.55
+        if let cardNumber = cardNumber {
+            totalBalance = 1234.0 + Double(cardNumber.final(characters: 4))!
+        }
+        arDelegate.cardExperienceEntities[1].text = totalBalance.currencyFormat
         arDelegate.cardExperienceEntities[4].text = "+\(6232.currencyFormat)"
         arDelegate.cardExperienceEntities[6].text = "-\(3200.currencyFormat)"
-
-        /// Clear scene
-        arView.scene.anchors.removeAll()
 
         /// Dynamically load stored card images
         let configuration = ARImageTrackingConfiguration()
