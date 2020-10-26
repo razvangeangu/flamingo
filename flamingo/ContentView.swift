@@ -40,9 +40,14 @@ struct ContentView: View {
             // MARK: - Identification
             if self.shouldDisplayExperience {
                 VStack {
+                    Image(systemName: "lock.circle.fill")
+                        .resizable()
+                        .frame(width: UIScreen.main.bounds.width  / 3, height: UIScreen.main.bounds.width  / 3, alignment: .center)
+                        .opacity(0.8)
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 8, trailing: 0))
                     Text(kInsertCardLabel)
                         .foregroundColor(.white)
-                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0))
+                        .padding(EdgeInsets(top: 0, leading: 8, bottom: 16, trailing: 8))
                         .multilineTextAlignment(.center)
                     Text(self.cardNumber.creditCardFormat)
                         .foregroundColor(.white)
@@ -63,8 +68,10 @@ struct ContentView: View {
                     }
                     .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
                     .background(Color.white)
+                    .accentColor(.black)
                     .cornerRadius(30)
                     .padding(EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 0))
+                    .opacity(0.8)
                 }
             }
         })
