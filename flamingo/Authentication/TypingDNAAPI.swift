@@ -93,7 +93,7 @@ struct RegisterAPIResponse: Codable {
     var message_code: Int
     
     /// Return `1` for success and `0` for failure.
-    var success: Int
+    var success: Int?
     
     /// Http status code
     var status: Int
@@ -108,7 +108,7 @@ struct VerifyAPIResponse: Codable {
     var message_code: Int
     
     /// Return `1` for success and `0` for failure.
-    var success: Int
+    var success: Int?
     
     /// Http status code
     var status: Int

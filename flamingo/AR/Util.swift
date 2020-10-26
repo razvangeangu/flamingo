@@ -25,7 +25,7 @@ func saveImage(image: UIImage, name: String) {
     }
 }
 
-/// Create ARReference Images From Somewhere Other Than The Default Folder
+/// Create ARReference dynamically
 func loadDynamicImageReferences() -> Set<ARReferenceImage> {
     var detectionImages: Set<ARReferenceImage> = Set()
     
@@ -47,8 +47,6 @@ func loadDynamicImageReferences() -> Set<ARReferenceImage> {
     }
     
     return detectionImages
-    //5. Set The ARWorldTrackingConfiguration Detection Images
-    // configuration.detectionImages = [arImage]
 }
 
 

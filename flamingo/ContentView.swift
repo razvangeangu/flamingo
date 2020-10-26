@@ -10,16 +10,19 @@ import SwiftUI
 struct ContentView: View {
     /// Card number will be recognised and set through the CardIO API.
     /// This will be shown on screen and will be used for identification.
-    @State var cardNumber: String! = "1234"
+    @State var cardNumber: String!
     
     /// This enables the AR experience once the user has been successfuly identified by the **TypingDNA** API.
-    @State var isAuthenticated: Bool = true
+    @State var isAuthenticated: Bool = false
     
     /// This displays the authentication error if **TypingDNA** API is not successfull.
     @State var hasAuthError: Bool = false
     
     /// This displays the error message from the **TypingDNA** API or the `kAuthenticationError`.
     @State var errorMessage: String = kAuthenticationError
+    
+    /// This is the value of the authentication text field
+    @State var textFieldValue: String?
     
     var body: some View {
         ZStack(content: {
@@ -46,7 +49,7 @@ struct ContentView: View {
                         .fontWeight(.heavy)
                         .font(Font.system(.title2))
                         .multilineTextAlignment(.center)
-                    TypingDNATextField()
+                    TypingDNATextField(text: $textFieldValue)
                         .frame(width: UIScreen.main.bounds.width * 0.8, height: 60, alignment: .center)
                     Button(kAuthenticateLabel) {
                         self.hideKeyboard()
@@ -100,6 +103,8 @@ struct ContentView: View {
                 self.isAuthenticated = false
                 self.errorMessage = response.message
                 self.hasAuthError = true
+                self.textFieldValue = ""
+                TypingDNARecorderMobile.reset()
             }
         }
     }
