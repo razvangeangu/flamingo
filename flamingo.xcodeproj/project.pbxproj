@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		026068BE80495618789544B5 /* libPods-flamingo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC1D2FEAD055D339BF2E8D4 /* libPods-flamingo.a */; };
 		36218DF12546261A00ECB551 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36218DF02546261900ECB551 /* Util.swift */; };
+		36311CD72548A7D100791564 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36311CD62548A7D000791564 /* GoogleService-Info.plist */; };
 		365B52A325450FBF00EAEDF4 /* Number+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365B52A225450FBF00EAEDF4 /* Number+Extension.swift */; };
 		365B52C725451E5B00EAEDF4 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365B52C625451E5B00EAEDF4 /* BlurView.swift */; };
 		365B52CC25451E7600EAEDF4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365B52CB25451E7600EAEDF4 /* View+Extension.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		36218DF02546261900ECB551 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		36311CD62548A7D000791564 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		365B52A225450FBF00EAEDF4 /* Number+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+Extension.swift"; sourceTree = "<group>"; };
 		365B52C625451E5B00EAEDF4 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		365B52CB25451E7600EAEDF4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				366C9691253F53F100D5A9EE /* LaunchScreen.storyboard */,
 				366C9694253F53F100D5A9EE /* Info.plist */,
 				36C1C62125445AC200E26150 /* Flamingo-Swift-Bridging-Header.h */,
+				36311CD62548A7D000791564 /* GoogleService-Info.plist */,
 			);
 			path = flamingo;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				366C9693253F53F100D5A9EE /* LaunchScreen.storyboard in Resources */,
+				36311CD72548A7D100791564 /* GoogleService-Info.plist in Resources */,
 				366C9690253F53F100D5A9EE /* Preview Assets.xcassets in Resources */,
 				366C968D253F53F100D5A9EE /* Assets.xcassets in Resources */,
 			);

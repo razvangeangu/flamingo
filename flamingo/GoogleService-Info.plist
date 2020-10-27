@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>927244906653-6to4c1lf2k8qjrnfkiik5ld6n15js4n8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.927244906653-6to4c1lf2k8qjrnfkiik5ld6n15js4n8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDNZwcXZxuZOpZtoTxp9kcfTprZUbgp8Cc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>927244906653</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.razvangeangu.flamingo</string>
+	<key>PROJECT_ID</key>
+	<string>flamingo-ar</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flamingo-ar.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:927244906653:ios:b3ff84f76a02159b4fa474</string>
+	<key>DATABASE_URL</key>
+	<string>https://flamingo-ar.firebaseio.com</string>
+</dict>
+</plist>
